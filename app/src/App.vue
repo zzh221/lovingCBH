@@ -29,7 +29,7 @@ let getDateDiff = function(startDate, endDate) {
     var dates = Math.abs((startTime - endTime)) / (1000 * 60 * 60 * 24);
     return dates;
 }
-document.title += getDateDiff((new Date()).getFullYear() + '-' + ((new Date()).getMonth() + 1) + '-' + (new Date()).getDate(), '2016-09-15') + 1 + '天';
+document.title += getDateDiff((new Date()).getFullYear() + '-' + ((new Date()).getMonth() + 1) + '-' + (new Date()).getDate(), '2024-01-20') + 1 + '天';
 export default {
     name: 'app',
     components: {
@@ -43,11 +43,10 @@ export default {
             enableHtml: false,
             fullStyle: [
                 `/*
-* Hi。宝贝！
-* 这么久了。还没和宝贝说过我的工作呢！
-* 我是个前端工程师。俗称程序员。网页相关。
+* hihihi慧慧。
+* momo是个web工程师，俗称程序员。网页相关。
 * 如这个页面。就是个什么也没有的网页。
-* 我的工作就是给这种空白的页面加点儿东西。
+* momo的工作就是给这种空白的页面加点儿逻辑。
 * 嗯。说起来手机和电脑还得区分一下。
 * 你现在用的是。。。${isPc ? '电脑' : '手机'}
 */
@@ -143,8 +142,8 @@ html{
   counter-reset: section;
 }
 .resumeEditor ol li::before {
-  counter-increment: section;            
-  content: counters(section, ".") " ";  
+  counter-increment: section;
+  content: counters(section, ".") " ";
   margin-right: .5em;
 }
 .resumeEditor blockquote {
@@ -158,86 +157,27 @@ html{
 `
             ],
             currentMarkdown: '',
-            fullMarkdown: `nostar × juanjuan
+            fullMarkdown: `zzh × cbh
 ----
 
-2016年08月05日。初初见面。两人齐齐心动。  
-2016年09月15日。即中秋节阴历八月十五。在一起。  
-已有 \`${getDateDiff((new Date()).getFullYear()+'-'+((new Date()).getMonth()+1)+'-'+(new Date()).getDate(),'2016-09-15') + 1}\` 天
+2023年的12月，慧慧突然出现在momo的世界里\n
+  我带着谨慎去试探，再回首却发现，自己的心却已经被慧慧偷走了。\n
+2024年01月20日，我们在一起了。\n
+已有 \`${getDateDiff((new Date()).getFullYear()+'-'+((new Date()).getMonth()+1)+'-'+(new Date()).getDate(),'2024-01-20') + 1}\` 天\n
 
-一起呲过的餐厅
-----
+如果说momo的生活是井底的一潭死水，那么慧慧就是林木的缝隙里照进来的一束光。\n
 
-* 昂吉拉姆西藏餐厅
-* 漫族餐厅
-* 鑫海汇海鲜烧烤
-* 老长沙罐子楼
-* 锅大侠火锅
-* 西湖春天
-* 天意
-* 曼玉
-* 王婆爱上虾
-* 十里洋场
-* 城墙根
-* 爱芳爱德
-* 阳光小店
-* 夜小红虾尾
-* 57°湘
-* 名厨味道
-* 老成都串串
-* 菜捕头
-* 知味观
-* 花港海航度假酒店
-* 冰城烧烤
-* ……
-
-一起看过的电影
-----
-
-1. 七月与安生
-2. 从你的全世界路过
-3. 驴得水
-4. 深海浩劫
-5. 湄公河行动
-6. 你的名字。
-7. 速度与激情8
-8. 战狼2
-9. 敦刻尔克
-10. 正义联盟
-11. 极盗车神
-12. ……
-13. 流浪地球
-14. 飞驰人生
-15. 新喜剧之王
-16. 来电狂响
-17. 疯狂的外星人
-18. 熊出没之原始时代
-19. ……
-
-一起玩过的地方
-----
-
-* 登封少林寺
-* 洛阳
-* 圣王坪
-* 大临淇
-* 皇城相府
-* 杭州西湖
-* ……
-
-一起玩过的游戏
-----
-
-1. 炉石传说
-2. 塞尔达传说-荒野之息
-3. 魂斗罗归来
-4. 马里奥奥德赛
-5. 欢乐麻将
-6. overcooked
-7. ……
-
-> 【Screw the world×I have my dear Juanjuan】  
-> 喂。我不只想影响你的习惯。我还要去改变你的人生。！
+> 画过的饼（解释权归慧慧所有）\n
+* 从牵手开始熟悉。\n
+* 给慧慧做家务\n
+* 带慧慧兜风~\n
+* 一起去其他陌生的城市旅行\n
+* 靠在一起打游戏\n
+* 一起穿JK/DK\n
+* 一起校园漫步\n
+* 再再再一起吃大餐\n
+* 永远爱对方\n
+~ etc\n
 
 `
         }
@@ -285,7 +225,7 @@ html{
                         resolve()
                     }
                 }).bind(this)
-                showStyle()
+                  showStyle()
             })
         },
         progressivelyShowResume() {
