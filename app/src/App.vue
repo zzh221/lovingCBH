@@ -108,6 +108,7 @@ html{
   ${ isPc ? '-webkit-transform: rotateY(-10deg) translateZ(-100px) ;transform: rotateY(-10deg) translateZ(-100px) ;' : '-webkit-transform: rotateX(10deg) translateZ(-100px) ;transform: rotateX(10deg) translateZ(-100px) ;' }
     ${ isPc ? '' : '-webkit-transform-origin: 50% 0% 0;transform-origin: 50% 0% 0;' }
   }
+
 /* 我开始写了 */
 
 
@@ -167,17 +168,18 @@ html{
 
 如果说momo的生活是井底的一潭死水，那么慧慧就是林木的缝隙里照进来的一束光。\n
 
-> 画过的饼（解释权归慧慧所有）\n
-* 从牵手开始熟悉。\n
-* 给慧慧做家务\n
-* 带慧慧兜风~\n
-* 一起去其他陌生的城市旅行\n
-* 靠在一起打游戏\n
-* 一起穿JK/DK\n
-* 一起校园漫步\n
-* 再再再一起吃大餐\n
-* 永远爱对方\n
-~ etc\n
+> 画过的饼（解释权归慧慧所有）
+* 拥有两个人的秘密私人博客
+* 从牵手开始熟悉
+* 给慧慧做家务
+* 带慧慧兜风~
+* 一起去其他陌生的城市旅行
+* 靠在一起打游戏
+* 一起穿JK/DK
+* 一起校园漫步
+* 再再再一起吃大餐
+* 永远爱对方
+* etc
 
 `
         }
