@@ -29,7 +29,9 @@ let getDateDiff = function(startDate, endDate) {
     var dates = Math.abs((startTime - endTime)) / (1000 * 60 * 60 * 24);
     return dates;
 }
-document.title += getDateDiff((new Date()).getFullYear() + '-' + ((new Date()).getMonth() + 1) + '-' + (new Date()).getDate(), '2024-01-20') + 1 + '天';
+if (!document.title.endsWith('了')) {
+  document.title += getDateDiff((new Date()).getFullYear() + '-' + ((new Date()).getMonth() + 1) + '-' + (new Date()).getDate(), '2025-01-01') + 1 + '天了';
+}
 export default {
     name: 'app',
     components: {
@@ -43,11 +45,11 @@ export default {
             enableHtml: false,
             fullStyle: [
                 `/*
-* hihihi慧慧。
-* momo是个web工程师，俗称程序员。网页相关。
+* 秋秋宝宝
+* 默少是个web后端工程师，俗称程序员。网页相关。
 * 如这个页面。就是个什么也没有的网页。
-* momo的工作就是给这种空白的页面加点儿逻辑。
-* 嗯。说起来手机和电脑还得区分一下。
+* 默少的工作就是给这种空白的页面加点儿逻辑。
+* 我们先给手机和电脑区分一下。
 * 你现在用的是。。。${isPc ? '电脑' : '手机'}
 */
 
@@ -109,7 +111,7 @@ html{
     ${ isPc ? '' : '-webkit-transform-origin: 50% 0% 0;transform-origin: 50% 0% 0;' }
   }
 
-/* 我开始写了 */
+/* 开始开始 */
 
 
 `,
@@ -158,28 +160,27 @@ html{
 `
             ],
             currentMarkdown: '',
-            fullMarkdown: `zzh × cbh
+            fullMarkdown: `默 × 秋
 ----
 
-2023年的12月，慧慧突然出现在momo的世界里\n
-  我带着谨慎去试探，再回首却发现，自己的心却已经被慧慧偷走了。\n
-2024年01月20日，我们在一起了。\n
-已有 \`${getDateDiff((new Date()).getFullYear()+'-'+((new Date()).getMonth()+1)+'-'+(new Date()).getDate(),'2024-01-20') + 1}\` 天\n
+2024年万圣节，秋秋突然出现在默少的世界里\n
+  我们只是相互舔舐着伤口，再回首却发现，我的心却已经被秋秋偷走了。\n
+2025年01月01日，元旦前，我们克服万难，终于在一起了。\n
+到現在已有 \`${getDateDiff((new Date()).getFullYear()+'-'+((new Date()).getMonth()+1)+'-'+(new Date()).getDate(),'2025-01-01') + 1}\` 天\n
 
-如果说momo的生活是井底的一潭死水，那么慧慧就是林木的缝隙里照进来的一束光。\n
+遇见你是在我们彼此都处于低谷的时候，或许那时的世界看起来有些灰暗，但因为有了你的出现，一切都有了光亮。\n
+毕竟，我们是“同类”嘛~\n
 
-> 画过的饼（解释权归慧慧所有）
-* 拥有两个人的秘密私人博客
-* 从牵手开始熟悉
-* 给慧慧做家务
-* 带慧慧兜风~
-* 一起去其他陌生的城市旅行
-* 靠在一起打游戏
-* 一起穿JK/DK
-* 一起校园漫步
+对不起哦，过年的那一刻，我居然什么都没准备，让秋秋失望惹\n
+
+除了赚钱钱写的之外，这是给秋秋写的第一段代码。虽然并没有多精美，但还是想让秋秋也有能炫耀的东西呢~\n
+
+> 画过的饼（解释权归秋秋所有）
+* 帕拉梅拉~
+* 结芬包包
+* 一起去很多城市旅行
+* 靠在家里，一起打游戏
 * 再再再一起吃大餐
-* 永远爱对方
-* etc
 
 `
         }
